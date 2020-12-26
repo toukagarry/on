@@ -1,0 +1,7 @@
+discord
+aiohttp
+BeautifulSoup
+bs4
+pycurl
+soupsieve
+attrs
