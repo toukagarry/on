@@ -42,4 +42,4 @@ async def on_message(message):
         print(message.embeds)
         await client.send_message(message.channel, processPokemon(message.embeds[0]))
 
-client.run("NDQzMDMxOTQ0NDA2NjMwNDA0.X7H2bQ.A1_deDKCfsJDWIOyOf8NP-hObAE",bot=False)
+client.run(config.bot.token,bot=False)
