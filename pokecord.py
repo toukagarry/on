@@ -4,6 +4,11 @@ from googlei import search
 client = discord.Client()
 
 import logging, random
+import dotenv
+from dotenv import load_dotenv
+
+load_dotenv()
+token = os.getenv('DISCORD_TOKEN')
 
 logging.basicConfig(level=logging.INFO)
 
@@ -42,4 +47,4 @@ async def on_message(message):
         print(message.embeds)
         await client.send_message(message.channel, processPokemon(message.embeds[0]))
 
-client.run(env.token,bot=False)
+client.run(token,bot=False)
